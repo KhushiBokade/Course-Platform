@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import img1 from '../assets/img-1.jpg';
 import img2 from '../assets/EduVerse.png';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -53,7 +54,7 @@ const Header = () => {
           <ul>
             {menuItems.map((item, index) => (
               <li key={index}>
-                <Link href={item.link}>{item.label}</Link>
+                <Link to={item.link}>{item.label}</Link>
               </li>
             ))}
           </ul>
